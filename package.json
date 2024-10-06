@@ -1,19 +1,23 @@
 {
   "name": "@skipper/string-utilities",
   "version": "1.0.0",
-  "description": "String manipulation utiltiies",
-  "main": "index.js",
+  "description": "A collection of string manipulation and validation utilities for JS/TS projects.",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest"
   },
-  "keywords": [
-    "string",
-    "utilities"
-  ],
+  "keywords": ["string", "utilities", "typescript", "validation", "manipulation"],
   "author": "Roy Chanunkha",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Skipper-116/string-utilities-js"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.4.5",
+    "@types/jest": "^27.0.3"
   }
 }
