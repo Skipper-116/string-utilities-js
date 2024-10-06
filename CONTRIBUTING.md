@@ -1,6 +1,6 @@
-# Contributing to @skipper/string-utilities
+# Contributing to @skipper116/string-utilities
 
-Thank you for considering contributing to @skipper/string-utilities! We welcome contributions from the community and are excited to collaborate with you.
+Thank you for considering contributing to @skipper116/string-utilities! We welcome contributions from the community and are excited to collaborate with you.
 
 ## How to Contribute
 

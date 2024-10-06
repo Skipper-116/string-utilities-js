@@ -1,13 +1,13 @@
-# @skipper/string-utilities
+# @skipper116/string-utilities
 
-`@skipper/string-utilities` is a lightweight collection of string manipulation and validation utilities built for JavaScript and TypeScript projects. This package provides functions to trim, convert, validate, and generate string values efficiently.
+`@skipper116/string-utilities` is a lightweight collection of string manipulation and validation utilities built for JavaScript and TypeScript projects. This package provides functions to trim, convert, validate, and generate string values efficiently.
 
 ## Installation
 
 You can install the package via npm:
 
 ```bash
-npm install @skipper/string-utilities
+npm install @skipper116/string-utilities
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ To use any of the functions in your JavaScript or TypeScript project, import the
 ### Example 1: Basic String Manipulation
 
 ```typescript
-import { trimAndLowercase, titleCase, kebabCase, reverseString } from '@skipper/string-utilities';
+import { trimAndLowercase, titleCase, kebabCase, reverseString } from '@skipper116/string-utilities';
 
 // Trim and convert to lowercase
 const lower = trimAndLowercase('  Hello World  ');
@@ -29,7 +29,7 @@ console.log(title); // Output: 'Hello World From String Utilities'
 
 // Convert a string to Kebab Case
 const kebab = kebabCase('Hello World From String Utilities');
-console.log(kebab); // Output: 'hello-world-from-@skipper/string-utilities'
+console.log(kebab); // Output: 'hello-world-from-@skipper116/string-utilities'
 
 // Reverse a string
 const reversed = reverseString('Hello');
@@ -39,7 +39,7 @@ console.log(reversed); // Output: 'olleH'
 ### Example 2: String Validations
 
 ```typescript
-import { emailValidation, urlValidation, phoneNumberValidation, passwordStrengthValidation, malawiPhoneNumberValidation, customPhoneNumberValidation, ipV4Validation, ipV6Validation } from '@skipper/string-utilities';
+import { emailValidation, urlValidation, phoneNumberValidation, passwordStrengthValidation, malawiPhoneNumberValidation, customPhoneNumberValidation, ipV4Validation, ipV6Validation } from '@skipper116/string-utilities';
 
 // Validate an email
 const isEmailValid = emailValidation('test@example.com');
@@ -75,7 +75,7 @@ console.log(isCustomPhoneValid); // Output: true
 ### Example 3: Custom Find and Replace
 
 ```typescript
-import { findAndReplace } from '@skipper/string-utilities';
+import { findAndReplace } from '@skipper116/string-utilities';
 
 // Find and replace occurrences of a string
 const newString = findAndReplace('Hello World! Hello Everyone!', 'Hello', 'Hi');
@@ -85,7 +85,7 @@ console.log(newString); // Output: 'Hi World! Hi Everyone!'
 ### Example 4: Generate Unique IDs
 
 ```typescript
-import { generateUniqueId } from '@skipper/string-utilities';
+import { generateUniqueId } from '@skipper116/string-utilities';
 
 // Generate a unique ID with an optional prefix
 const uniqueId = generateUniqueId('user');
@@ -93,7 +93,7 @@ console.log(uniqueId); // Output: 'user_xxxxxxx' (random characters)
 ```
 
 ```typescript
-import { generateUUIDv7 } from '@skipper/string-utilities';
+import { generateUUIDv7 } from '@skipper116/string-utilities';
 
 const uuid = generateUUIDv7();
 console.log(uuid); // Output: 'xxxxxxxx-xxxx-7xxx-yxxx-xxxxxxxxxxxx' (random characters)
@@ -102,7 +102,7 @@ console.log(uuid); // Output: 'xxxxxxxx-xxxx-7xxx-yxxx-xxxxxxxxxxxx' (random cha
 ### Example 5: Alphanumeric and Length Check Validations
 
 ```typescript
-import { alphanumericCheck, lengthCheck } from '@skipper/string-utilities';
+import { alphanumericCheck, lengthCheck } from '@skipper116/string-utilities';
 
 // Check if a string is alphanumeric
 const isAlphanumeric = alphanumericCheck('abc123');
@@ -240,7 +240,7 @@ This package is fully typed with TypeScript, so you will get type definitions an
 ### Example
 
 ```typescript
-import { generateUniqueId, passwordStrengthValidation } from '@skipper/string-utilities';
+import { generateUniqueId, passwordStrengthValidation } from '@skipper116/string-utilities';
 
 const userId: string = generateUniqueId('user');
 const isStrongPassword: boolean = passwordStrengthValidation('MyPassword123');
