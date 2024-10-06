@@ -11,3 +11,4 @@ export * from './validations/phoneNumberValidation';
 export * from './validations/passwordStrengthValidation';
 export * from './validations/alphanumericCheck';
 export * from './validations/lengthCheck';
+export * from './validations/customValidator';
