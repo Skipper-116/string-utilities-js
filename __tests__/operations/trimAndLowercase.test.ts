@@ -1,13 +1,13 @@
-import { trimAndLowercase } from '../../src/operations/trimAndLowercase';
+import { trimAndLowercase } from "../../src/operations/trimAndLowercase";
 
-describe('trimAndLowercase', () => {
-  it('should trim and convert to lowercase', () => {
-    const result = trimAndLowercase('  HELLO world  ');
-    expect(result).toBe('hello world');
+describe("trimAndLowercase", () => {
+  it("should trim and convert to lowercase", () => {
+    const result = trimAndLowercase("  HELLO world  ");
+    expect(result).toBe("hello world");
   });
 
-  it('should handle an empty string', () => {
-    const result = trimAndLowercase('');
-    expect(result).toBe('');
+  it("should handle an empty string", () => {
+    const result = trimAndLowercase("");
+    expect(result).toBe("");
   });
 });
