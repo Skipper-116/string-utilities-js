@@ -14,12 +14,24 @@ describe('phoneNumberValidation', () => {
 
 describe('malawiPhoneNumberValidation', () => {
     it('should validate a correct Malawi phone number', () => {
-        const result = malawiPhoneNumberValidation('0999123456');
+        const result = malawiPhoneNumberValidation('0999123467');
         expect(result).toBe(true);
     });
 
     it('should invalidate an incorrect Malawi phone number', () => {
         const result = malawiPhoneNumberValidation('099912345');
+        expect(result).toBe(false);
+    });
+});
+
+describe('customPhoneNumberValidation', () => {
+    it('should validate a correct custom phone number', () => {
+        const result = customPhoneNumberValidation('1234567890', "10");
+        expect(result).toBe(true);
+    });
+
+    it('should invalidate an incorrect custom phone number', () => {
+        const result = customPhoneNumberValidation('123-abc-7890', "10");
         expect(result).toBe(false);
     });
 });

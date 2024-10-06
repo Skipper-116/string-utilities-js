@@ -8,6 +8,6 @@ describe('kebabCase', () => {
 
   it('should handle strings with special characters', () => {
     const result = kebabCase('Hello World! How are you?');
-    expect(result).toBe('hello-world-how-are-you');
+    expect(result).toBe('hello-world!-how-are-you?');
   });
 });

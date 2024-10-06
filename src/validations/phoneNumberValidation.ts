@@ -5,7 +5,7 @@ const phoneNumberValidation = (phoneNumber: string): boolean => {
 
 const malawiPhoneNumberValidation = (phoneNumber: string): boolean => {
     // Regular expression to handle Malawi phone numbers with specific provider prefixes
-    const re = /^(\+265|0)(9|8|2|1)\d{7}$/;
+    const re = /^(\+265|0)(9|8|2|1)\d{8}$/;
     return re.test(phoneNumber);
 }
 
