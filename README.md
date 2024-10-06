@@ -78,6 +78,13 @@ const uniqueId = generateUniqueId('user');
 console.log(uniqueId); // Output: 'user_xxxxxxx' (random characters)
 ```
 
+```typescript
+import { generateUUIDv7 } from '@skipper/string-utilities';
+
+const uuid = generateUUIDv7();
+console.log(uuid); // Output: 'xxxxxxxx-xxxx-7xxx-yxxx-xxxxxxxxxxxx' (random characters)
+```
+
 ### Example 5: Alphanumeric and Length Check Validations
 
 ```typescript
