@@ -11,5 +11,9 @@
     "utilities"
   ],
   "author": "Roy Chanunkha",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skipper-116/string-utilities-js"
+  }
 }
