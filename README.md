@@ -259,6 +259,8 @@ We welcome contributions to improve this package. If you want to contribute:
 2. Create a new branch for your feature or bug fix.
 3. Submit a pull request with a detailed explanation.
 
+More details can be found in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
 ---
 
 ## License
