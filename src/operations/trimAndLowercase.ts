@@ -1,3 +1,3 @@
 export const trimAndLowercase = (str: string): string => {
-    return str.trim().toLowerCase();
+  return str.trim().toLowerCase();
 };
