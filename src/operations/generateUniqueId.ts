@@ -1,7 +1,25 @@
+/**
+ * Generates a unique identifier with an optional prefix.
+ *
+ * @param {string} [prefix=''] - An optional prefix for the unique ID. Defaults to an empty string.
+ * @returns {string} A string containing the prefix (if provided) followed by an underscore and a random alphanumeric string.
+
+ */
 const generateUniqueId = (prefix: string = ''): string => {
   return `${prefix}_${Math.random().toString(36).substr(2, 9)}`;
 };
 
+
+/**
+ * Generates a UUIDv7 (Universally Unique Identifier version 7).
+ *
+ * @returns {string} A string representation of a UUIDv7.
+ *
+ * @description
+ * This function generates a UUIDv7 based on the current timestamp and random values.
+ * The UUIDv7 format is defined in the UUID version 7 draft specification.
+ * It combines a 48-bit timestamp with 80 bits of randomness.
+ */
 const generateUUIDv7 = (): string => {
   const timestamp = Date.now();
   const randomBytes = new Uint8Array(10);

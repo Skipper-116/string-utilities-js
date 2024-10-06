@@ -1,6 +1,6 @@
 import {
   phoneNumberValidation,
-  malawiPhoneNumberValidation,
+  isMalawiPhoneNumber,
   customPhoneNumberValidation,
 } from "../../src/validations/phoneNumberValidation";
 
@@ -18,12 +18,12 @@ describe("phoneNumberValidation", () => {
 
 describe("malawiPhoneNumberValidation", () => {
   it("should validate a correct Malawi phone number", () => {
-    const result = malawiPhoneNumberValidation("0999123467");
+    const result = isMalawiPhoneNumber("0999123467");
     expect(result).toBe(true);
   });
 
   it("should invalidate an incorrect Malawi phone number", () => {
-    const result = malawiPhoneNumberValidation("099912345");
+    const result = isMalawiPhoneNumber("099912345");
     expect(result).toBe(false);
   });
 });
