@@ -39,7 +39,7 @@ console.log(reversed); // Output: 'olleH'
 ### Example 2: String Validations
 
 ```typescript
-import { emailValidation, urlValidation, phoneNumberValidation, passwordStrengthValidation } from '@skipper/string-utilities';
+import { emailValidation, urlValidation, phoneNumberValidation, passwordStrengthValidation, malawiPhoneNumberValidation, customPhoneNumberValidation, ipV4Validation, ipV6Validation } from '@skipper/string-utilities';
 
 // Validate an email
 const isEmailValid = emailValidation('test@example.com');
@@ -49,6 +49,12 @@ console.log(isEmailValid); // Output: true
 const isUrlValid = urlValidation('https://www.example.com');
 console.log(isUrlValid); // Output: true
 
+const isIpV4Valid = ipV4Validation('192.168.0.1');
+console.log(isIpV4Valid); // Output: true
+
+const isIpV6Valid = ipV6Validation('2001:0db8:85a3:0000:0000:8a2e:0370:7334');
+console.log(isIpV6Valid); // Output: true
+
 // Validate a phone number (E.164 format)
 const isPhoneValid = phoneNumberValidation('+1234567890');
 console.log(isPhoneValid); // Output: true
@@ -56,6 +62,14 @@ console.log(isPhoneValid); // Output: true
 // Validate password strength (minimum 8 characters, at least one letter and one number)
 const isPasswordStrong = passwordStrengthValidation('Password123');
 console.log(isPasswordStrong); // Output: true
+
+// Validate a Malawi phone number
+const isMalawiPhoneValid = malawiPhoneNumberValidation('0999123456');
+console.log(isMalawiPhoneValid); // Output: true
+
+// Validate a custom phone number format
+const isCustomPhoneValid = customPhoneNumberValidation('+1-123-456-7890', '1');
+console.log(isCustomPhoneValid); // Output: true
 ```
 
 ### Example 3: Custom Find and Replace
