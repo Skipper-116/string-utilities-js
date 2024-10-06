@@ -15,3 +15,5 @@ const customPhoneNumberValidation = (phoneNumber: string, countryCode: string): 
     const re = new RegExp(`^(${countryCode}|\\+${countryCode}|0)?[\\s-]?\\(?\\d{1,4}\\)?[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}$`);
     return re.test(phoneNumber);
 }
+
+export { phoneNumberValidation, malawiPhoneNumberValidation, customPhoneNumberValidation };
