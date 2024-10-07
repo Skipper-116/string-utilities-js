@@ -32,3 +32,5 @@ export declare function lengthCheck(
   min: number,
   max: number
 ): boolean;
+export declare function isBlank(value: any): boolean;
+export declare function isPresent(value: any): boolean;
