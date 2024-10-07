@@ -40,7 +40,6 @@ const isMalawiPhoneNumber = (phoneNumber: string): boolean => {
   return re.test(phoneNumber);
 };
 
-
 /**
  * Validates a phone number for a specified country using a flexible regular expression.
  *
@@ -59,11 +58,11 @@ const isMalawiPhoneNumber = (phoneNumber: string): boolean => {
 // customizable phone number validation so that the user can specify the country code
 const customPhoneNumberValidation = (
   phoneNumber: string,
-  countryCode: string,
+  countryCode: string
 ): boolean => {
   // Regular expression to handle various phone number formats
   const re = new RegExp(
-    `^(${countryCode}|\\+${countryCode}|0)?[\\s-]?\\(?\\d{1,4}\\)?[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}$`,
+    `^(${countryCode}|\\+${countryCode}|0)?[\\s-]?\\(?\\d{1,4}\\)?[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}[\\s-]?\\d{1,4}$`
   );
   return re.test(phoneNumber);
 };

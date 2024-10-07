@@ -17,7 +17,6 @@ const urlValidation = (url: string): boolean => {
   return re.test(url);
 };
 
-
 /**
  * Validates an IPv4 address using a regular expression.
  *
@@ -32,7 +31,6 @@ const ipV4Validation = (ip: string): boolean => {
   const re = /^(\d{1,3}\.){3}\d{1,3}$/;
   return re.test(ip);
 };
-
 
 /**
  * Validates an IPv6 address using a regular expression.

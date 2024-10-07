@@ -1,4 +1,9 @@
-import { kebabCase, camelCase, pascalCase, snakeCase } from "../../src/operations/kebabCase";
+import {
+  kebabCase,
+  camelCase,
+  pascalCase,
+  snakeCase,
+} from "../../src/operations/kebabCase";
 
 describe("kebabCase", () => {
   it("should convert to kebab case", () => {
@@ -35,8 +40,6 @@ describe("pascalCase", () => {
     expect(result).toBe("HelloWorld!HowAreYou?");
   });
 });
-
-
 
 describe("snakeCase", () => {
   it("should convert to snake case", () => {

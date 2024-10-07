@@ -9,7 +9,6 @@ const generateUniqueId = (prefix: string = ''): string => {
   return `${prefix}_${Math.random().toString(36).slice(2, 11)}`;
 };
 
-
 /**
  * Generates a UUIDv7 (Universally Unique Identifier version 7).
  *
