@@ -183,9 +183,7 @@ console.log(isLengthValid); // Output: true
    console.log(result); // 'HelloWorldFromStringUtilities'
    ```
 
-### API Reference (continued)
-
-3. **`titleCase(str: string): string`**  
+6. **`titleCase(str: string): string`**  
    Converts a string to title case, where the first letter of each word is capitalized.
 
    **Example:**
@@ -195,7 +193,7 @@ console.log(isLengthValid); // Output: true
    console.log(result); // 'Hello World From String Utilities'
    ```
 
-4. **`reverseString(str: string): string`**  
+7. **`reverseString(str: string): string`**  
    Reverses the characters in a given string.
 
    **Example:**
@@ -205,7 +203,7 @@ console.log(isLengthValid); // Output: true
    console.log(result); // 'olleH'
    ```
 
-5. **`findAndReplace(str: string, find: string, replace: string): string`**  
+8. **`findAndReplace(str: string, find: string, replace: string): string`**  
    Finds all occurrences of a substring and replaces them with another string.
 
    **Example:**
@@ -215,7 +213,7 @@ console.log(isLengthValid); // Output: true
    console.log(result); // 'Hi World! Hi Everyone!'
    ```
 
-6. **`generateUniqueId(prefix?: string): string`**  
+9. **`generateUniqueId(prefix?: string): string`**  
    Generates a unique ID with an optional prefix. The unique ID is based on a random string.
 
    **Example:**
@@ -287,6 +285,25 @@ console.log(isLengthValid); // Output: true
    console.log(isValid); // true
    ```
 
+7. **`isBlank(value: any): boolean`**  
+   Checks if the given value is a blank string, null, or undefined.
+
+   **Example:**
+
+   ```typescript
+   const isValid = isBlank("");
+   console.log(isValid); // true
+   ```
+
+8. **`isPresent(value: any): boolean`**  
+   Checks if the given value is not a blank string, null, or undefined.
+
+   **Example:**
+
+   ```typescript
+   const isValid = isPresent("Hello");
+   console.log(isValid); // true
+   ```
 ---
 
 ## Typescript Support
