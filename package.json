@@ -1,6 +1,6 @@
 {
   "name": "@skipper116/string-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of string manipulation and validation utilities for JS/TS projects.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
