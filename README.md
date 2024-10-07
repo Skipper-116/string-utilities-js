@@ -153,6 +153,36 @@ console.log(isLengthValid); // Output: true
    console.log(result); // 'hello-world'
    ```
 
+3. **`camelCase(str: string): string`**  
+   Converts a string to camel case (lowercase with the first letter of each word capitalized).
+
+   **Example:**
+
+   ```typescript
+   const result = camelCase("hello world from string utilities");
+   console.log(result); // 'helloWorldFromStringUtilities'
+   ```
+
+4. **`snakeCase(str: string): string`**
+   Converts a string to snake case (lowercase with underscores).
+
+   **Example:**
+
+   ```typescript
+   const result = snakeCase("Hello World");
+   console.log(result); // 'hello_world'
+   ```
+
+5. **`pascalCase(str: string): string`**
+   Converts a string to pascal case (uppercase with the first letter of each word capitalized).
+
+   **Example:**
+
+   ```typescript
+   const result = pascalCase("hello world from string utilities");
+   console.log(result); // 'HelloWorldFromStringUtilities'
+   ```
+
 ### API Reference (continued)
 
 3. **`titleCase(str: string): string`**  
