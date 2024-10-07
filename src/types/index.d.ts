@@ -1,5 +1,8 @@
 export declare function trimAndLowercase(str: string): string;
 export declare function kebabCase(str: string): string;
+export declare function pascalCase(str: string): string;
+export declare function camelCase(str: string): string;
+export declare function snakeCase(str: string): string;
 export declare function titleCase(str: string): string;
 export declare function reverseString(str: string): string;
 export declare function findAndReplace(
