@@ -38,12 +38,22 @@ jobs:
       - name: Build the package
         run: pnpm build
 
-      - name: Bump version
-        id: bump_version
+      - name: Configure Git
         run: |
           git config --global user.name '${{ github.actor }}'
           git config --global user.email '${{ github.actor }}@users.noreply.github.com'
+
+      - name: Commit changes if any
+        run: |
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: build and format code [skip ci]"
+
+      - name: Bump version
+        run: |
           npm version patch -m "Bump version to %s [skip ci]"
+        
+      - name: Get new version
+        run: |
           echo "NEW_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Generate Changelog
