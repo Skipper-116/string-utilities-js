@@ -32,5 +32,15 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Roy Chanunkha",
+      "url": "https://www.chanunkha.com"
+    },
+    {
+      "name": "Joel Fickson",
+      "url": "https://www.vwaza.com"
+    }
+  ]
 }
