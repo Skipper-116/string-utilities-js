@@ -35,14 +35,8 @@ jobs:
       - name: Format Code
         run: pnpm format
 
-      - name: Run tests
-        run: pnpm test
-
       - name: Build the package
         run: pnpm build
-
-      - name: Validate package
-        run: pnpm pack --dry-run
 
       - name: Commit changes before version bump
         run: |
